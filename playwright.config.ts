@@ -20,6 +20,8 @@ export default defineConfig({
     trace: "on-first-retry",
     /* Take screenshots on test failure */
     screenshot: "only-on-failure",
+    /* Set browser locale to UK */
+    locale: "en-gb",
   },
 
   /* Configure projects for major browsers */
