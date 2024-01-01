@@ -21,7 +21,10 @@ export default defineConfig({
     /* Take screenshots on test failure */
     screenshot: "only-on-failure",
     /* Set browser locale to UK */
+    geolocation: { longitude: 12.492507, latitude: 41.889938 },
     locale: "en-GB",
+    permissions: ["geolocation"],
+    timezoneId: "Europe/Paris",
   },
 
   /* Configure projects for major browsers */
