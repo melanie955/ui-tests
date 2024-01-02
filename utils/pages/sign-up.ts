@@ -40,7 +40,7 @@ export class SignUpPage {
     await expect.soft(this.signUpHeading).toBeVisible();
   }
 
-  async enterUserEmail(validEmail: boolean) {
+  async enterUserEmail(validEmail = true) {
     const userEmail = validEmail
       ? faker.internet.email()
       : faker.person.firstName();
